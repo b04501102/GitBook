@@ -1,0 +1,8 @@
+{
+    "plugins": ["katex", "disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "Rainforest's Note"
+        }
+    }
+}

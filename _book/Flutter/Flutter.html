@@ -1,0 +1,545 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../Swift/RealmSwift.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Python/Python.html">
+            
+                <a href="../Python/Python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Python/Machine Learning.html">
+            
+                <a href="../Python/Machine Learning.html">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Unity/Unity.html">
+            
+                <a href="../Unity/Unity.html">
+            
+                    
+                    Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Website/Website隨筆.html">
+            
+                <a href="../Website/Website隨筆.html">
+            
+                    
+                    Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Swift/Swift.html">
+            
+                <a href="../Swift/Swift.html">
+            
+                    
+                    Swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Swift/RealmSwift.html">
+            
+                <a href="../Swift/RealmSwift.html">
+            
+                    
+                    Realm Swift
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Flutter.html">
+            
+                <a href="Flutter.html">
+            
+                    
+                    Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Flutter</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="flutter">Flutter</h1>
+<p><img src="Flutter.assets/flutter-mark-square-100.png" alt="flutter-mark-square-100"></p>
+<h2 id="system-requirements">System Requirements</h2>
+<ul>
+<li>Operating Systems: macOS(64-bit)</li>
+<li>Disk Space: 700 MB $\uparrow$ (does not include disk space for IDE/tools)</li>
+<li>Tools: <code>bash</code>, <code>mkdir</code>, <code>rm</code>, <code>git</code>, <code>curl</code>, <code>unzip</code>, <code>which</code></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li><p>Download the latest release of the <a href="https://flutter.io/sdk-archive/#macos" target="_blank">Flutter SDK</a></p>
+</li>
+<li><p>Extract and move the file to the directory where you placed the Flutter SDK</p>
+<pre><code class="lang-powershell"><span class="hljs-comment"># cd ~/Downloads</span>
+<span class="hljs-comment"># unzip ~/Downloads/flutter_macos_vx.x.x-beta.zip</span>
+<span class="hljs-comment"># for my mac, it will auto unzip the downloaded zip files</span>
+mv ./flutter ~
+<span class="hljs-comment"># place at the home</span>
+</code></pre>
+</li>
+<li><p>Update the path variable in <code>.zshrc</code></p>
+<ul>
+<li><p><code>nvim ~/.zshrc</code></p>
+</li>
+<li><pre><code># Flutter
+export PATH=&quot;/Users/your_user_name/flutter/bin:$PATH&quot;
+</code></pre></li>
+<li><p><code>source .zshrc</code></p>
+</li>
+<li><p>Run <code>echo $PATH</code> and check the <code>flutter/bin</code> directory is now in your PATH </p>
+</li>
+</ul>
+</li>
+<li><p>Run flutter doctor to see if there are any dependencies you need to install to complete the setup.</p>
+<pre><code class="lang-powershell">flutter doctor
+</code></pre>
+<pre><code>Doctor summary (to see all details, run flutter doctor -v):
+[&#x2713;] Flutter (Channel beta, v0.4.4, on Mac OS X 10.13.4 17E202, locale en-TW)
+[&#x2717;] Android toolchain - develop for Android devices
+    &#x2717; Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.io/setup/#android-setup for detailed instructions).
+      If Android SDK has been installed to a custom location, set $ANDROID_HOME to that location.
+[!] iOS toolchain - develop for iOS devices (Xcode 9.3.1)
+    &#x2717; libimobiledevice and ideviceinstaller are not installed. To install, run:
+        brew install --HEAD libimobiledevice
+        brew install ideviceinstaller
+    &#x2717; ios-deploy not installed. To install:
+        brew install ios-deploy
+    &#x2717; CocoaPods not installed.
+        CocoaPods is used to retrieve the iOS platform side&apos;s plugin code that responds to your plugin usage on the Dart side.
+        Without resolving iOS dependencies with CocoaPods, plugins will not work on iOS.
+        For more info, see https://flutter.io/platform-plugins
+      To install:
+        brew install cocoapods
+        pod setup
+[&#x2717;] Android Studio (not installed)
+[!] VS Code (version 1.23.1)
+[!] Connected devices
+    ! No devices available
+
+! Doctor found issues in 5 categories.
+</code></pre></li>
+</ol>
+<h3 id="platform-setup">Platform setup</h3>
+<blockquote>
+<p>macOS supports developing Flutter apps for both iOS and Android. Complete at least one of the two platform setup steps now, to be able to build and run your first Flutter app.</p>
+</blockquote>
+<h4 id="ios-setup">iOS setup</h4>
+<ul>
+<li><p>Install Xcode $\rightarrow$ With Xcode, you&#x2019;ll be able to run Flutter apps on an iOS device or on the simulator.</p>
+<ol>
+<li>Install Xcode 9.0 or newer(via <a href="https://developer.apple.com/xcode/" target="_blank">web download</a> or the <a href="https://itunes.apple.com/us/app/xcode/id497799835" target="_blank">Mac App Store</a>)</li>
+<li>Configure the Xcode command-line tools to use the newly-installed version of Xcode by running <code>sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer</code> from the command line</li>
+<li>Make sure the Xcode license agreement is signed by either opening Xcode once and confirming or running <code>sudo xcodebuild -license</code> from the command line</li>
+</ol>
+</li>
+<li><p>Set up the iOS simulator</p>
+<ol>
+<li><p>On Mac, you can open the Simulator via type <code>open -a Simulator</code> in your terminal.</p>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 2.56.42 PM.png" alt="Screen Shot 2018-05-31 at 2.56.42 PM"></p>
+<ul>
+<li>simulator&apos;s <strong>Hardware &gt; Device</strong> menu $\rightarrow$ 64-bit device(iPhone 5s or later)</li>
+<li><strong>Windows &gt; Physical Size</strong> can change the simulator size to fit the real size.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Deploy to iOS devices</p>
+<ul>
+<li><p>according to the <code>flutter doctor</code> results, you need to install the tools for deploying Flutter apps to iOS devices.</p>
+<ol>
+<li>Install <a href="https://docs.brew.sh/Installation" target="_blank">Homebrew&#x1F37A;</a>.</li>
+</ol>
+<pre><code class="lang-powershell">brew update
+brew install --HEAD libimobiledevice
+brew install ideviceinstaller ios-deploy cocoapods
+pod setup <span class="hljs-comment"># this command may take some time</span>
+</code></pre>
+<ol>
+<li>if any of these commands fails with an error, try <code>brew doctor</code> or god bless you XDD.</li>
+</ol>
+</li>
+<li><p>Here I meet an error that missing Xcode dependency - Python module <strong>six</strong></p>
+<pre><code class="lang-powershell">brew reinstall python@<span class="hljs-number">2</span>
+pip install six
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="configure-editor">Configure Editor</h3>
+<ul>
+<li><p>You can simply use any text editor combined with command-line tools.</p>
+</li>
+<li><p>Or, add an editor plugin for VS Code</p>
+<ul>
+<li><p>Install VS Code via <a href="https://caskroom.github.io/" target="_blank">Homebrew-Cask</a></p>
+<pre><code class="lang-powershell">brew tap homebrew/cask
+brew cask search visual-studio-code
+brew cask info visual-studio-code
+brew cask install visual-studio-code
+</code></pre>
+</li>
+<li><p>Install the Flutter plugin</p>
+<ol>
+<li><p>Start VS Code</p>
+</li>
+<li><p>Invoke <strong>View &gt; Command Palette...</strong> or type <strong>&#x2318;+&#x21EA;+P</strong></p>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.37.35 PM.png" alt="Screen Shot 2018-05-31 at 3.37.35 PM"></p>
+</li>
+<li><p>Type &apos;install&apos;,and select the <strong>Extensions: Install Extension</strong> action</p>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.38.09 PM.png" alt="Screen Shot 2018-05-31 at 3.38.09 PM"></p>
+</li>
+<li><p>Enter <strong>flutter</strong> in the search field, select &#x2018;Flutter&#x2019; in the list, and click <strong>Install</strong></p>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.38.53 PM.png" alt="Screen Shot 2018-05-31 at 3.38.53 PM"></p>
+</li>
+<li><p>Select <strong>reload</strong> to reload VS Code</p>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.39.00 PM.png" alt="Screen Shot 2018-05-31 at 3.39.00 PM"></p>
+</li>
+</ol>
+</li>
+<li><p>Validate your setup with the Flutter Doctor</p>
+<ol>
+<li>Invoke <strong>View &gt; Command Palette...</strong> or type <strong>&#x2318;+&#x21EA;+P</strong></li>
+<li>Type &apos;doctor&apos;,and select the <strong>Flutter: Run Flutter Doctor</strong> action</li>
+<li>Review the output in the &#x2018;OUTPUT&#x2019; pane for any issues</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="test-drive">Test Drive</h3>
+<ul>
+<li><p><strong>Terminal + editor</strong></p>
+<ul>
+<li><p>Create new app</p>
+<pre><code class="lang-powershell">cd Desktop
+flutter create newapp
+cd newapp
+</code></pre>
+</li>
+<li><p>Run the app</p>
+<pre><code class="lang-powershell">flutter run
+</code></pre>
+</li>
+</ul>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.52.51 PM.png" alt="Screen Shot 2018-05-31 at 3.52.51 PM"></p>
+<ul>
+<li><p>Try a hot reload</p>
+<ol>
+<li><p><code>nvim lib/main.dart</code></p>
+</li>
+<li><p>Try to change the string</p>
+<pre><code># &apos;You have pushed the button this many times:&apos;
+&apos;You have clicked the button this many times:&apos;
+</code></pre></li>
+</ol>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.53.43 PM.png" alt="Screen Shot 2018-05-31 at 3.53.43 PM"></p>
+<ol>
+<li>Press <strong>r</strong> to hot reload; press <strong>R</strong> to restart the app entirely. </li>
+</ol>
+<p><img src="Flutter.assets/Screen Shot 2018-05-31 at 3.54.10 PM.png" alt="Screen Shot 2018-05-31 at 3.54.10 PM"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=RS36gBEp8OI" target="_blank">Build reactive mobile apps with Flutter (Google I/O &apos;18)</a></li>
+<li><a href="https://material.io/design/" target="_blank">Design - Material Design</a></li>
+<li><a href="https://flutter.io/setup-macos/" target="_blank">Get Started: Install on macOS - Flutter</a></li>
+<li><a href="https://flutter.io/get-started/editor/#vscode" target="_blank">Get Started: Configure Editor - Flutter</a></li>
+<li><a href="https://flutter.io/get-started/test-drive/#terminal" target="_blank">Get Started: Test Drive - Flutter</a></li>
+<li><a href="https://github.com/flutter/flutter/issues/16428" target="_blank">Missing xcode dependency: Python module &quot;six&quot; &#xB7; Issue #16428 &#xB7; flutter/flutter</a></li>
+<li><a href="https://flutter.io/get-started/codelab/" target="_blank">Write Your First Flutter App - Flutter</a></li>
+<li></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Swift/RealmSwift.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Realm Swift">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter","level":"1.6","depth":1,"previous":{"title":"Realm Swift","level":"1.5.1","depth":2,"path":"Swift/RealmSwift.md","ref":"Swift/RealmSwift.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","disqus","livereload"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"Rainforest's Note"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flutter/Flutter.md","mtime":"2018-05-31T11:31:27.351Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-01T14:04:54.568Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
